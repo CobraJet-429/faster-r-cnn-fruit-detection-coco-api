@@ -49,3 +49,29 @@ Fine-tuned a Faster R-CNN (ResNet-50 + FPN) to detect apples, bananas, and orang
 - The test data also did not contain `small` objects with `0 < area < 1024 px^2`.
 - This means`AP_small` and `AR_small` (flagged `-1.0`) did not contribute to the evaluation metrics.
 - `AR10` and `AR100` are again identical and consistent with training performance.
+
+### **How To Run**
+
+#### **Option 1 - Run Locally**
+1. Clone the repository
+      ```bash
+      git clone https://github.com/CobraJet-429/faster-r-cnn-fruit-detection-coco-api.git 
+      cd faster-r-cnn-fruit-detection-coco-api
+      ```
+2. Download the dataset manually from this [Kaggle link](https://www.kaggle.com/datasets/mbkinaci/fruit-images-for-object-detection/data).
+
+3. (Optional) Create and activate a virtual environment
+
+4. Install required packages, if you haven't already.
+
+5. Open the notebook e.g., on ```jupyter notebook```
+
+#### **Option 2 - Run Directly on Kaggle**
+
+1. Go to the [Kaggle dataset](https://www.kaggle.com/datasets/mbkinaci/fruit-images-for-object-detection/data) and create a new notebook.
+
+2. Click “File” -> “Import Notebook” and upload `faster-r-cnn-fruit-detection-with-coco-api.ipynb` from this repo.
+
+3. In the right sidebar, enable a GPU accelerator (recommend P100).
+
+4. Run the cells.
